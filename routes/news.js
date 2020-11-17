@@ -17,7 +17,8 @@ router.get('/', (req, res) => {
   findNews.exec((err, data) => {
     res.render('news', {
       title: 'News',
-      data
+      data,
+      search
     });
   })
 
